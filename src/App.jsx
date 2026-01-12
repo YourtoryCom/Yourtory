@@ -10,7 +10,7 @@ function App() {
       </header>
       <div className="title-container">
         <img src="/title-yourtory.png" alt="Yourtory" className="main-title" />
-        <p className="catchphrase">あああああああ経営者に、右腕を授ける。</p>
+        <p className="catchphrase">経営者に、右腕を授ける。</p>
       </div>
       <div className="products-container">
         <div className="product-item">
