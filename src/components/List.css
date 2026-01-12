@@ -1,0 +1,193 @@
+.list {
+  min-width: 280px;
+  max-width: 280px;
+  background: #f4f5f7;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s;
+}
+
+.list.dragging-over {
+  background: #e4e6ea;
+  border: 2px dashed #0079bf;
+  box-shadow: 0 4px 12px rgba(0, 121, 191, 0.2);
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.list-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #172b4d;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  flex: 1;
+  margin: 0;
+}
+
+.list-title:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.list-title-input {
+  font-size: 18px;
+  font-weight: 700;
+  color: #172b4d;
+  border: 2px solid #0079bf;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 100%;
+  background: white;
+  outline: none;
+}
+
+.delete-list-button {
+  background: transparent;
+  border: none;
+  color: #6b778c;
+  font-size: 24px;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.delete-list-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #172b4d;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.cards-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.add-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-input {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px;
+  border: 2px solid #0079bf;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  background: white;
+}
+
+.card-input:focus {
+  border-color: #005a8f;
+  box-shadow: 0 0 0 3px rgba(0, 121, 191, 0.1);
+}
+
+.add-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.add-card-button {
+  flex: 1;
+  padding: 10px 16px;
+  background: #0079bf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-card-button:hover {
+  background: #005a8f;
+}
+
+.cancel-button {
+  padding: 10px 16px;
+  background: transparent;
+  color: #6b778c;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #172b4d;
+}
+
+.add-card-trigger {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  color: #6b778c;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.add-card-trigger:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #172b4d;
+}
+
+.empty-list-placeholder {
+  padding: 40px 20px;
+  text-align: center;
+  color: #6b778c;
+  font-size: 14px;
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+}

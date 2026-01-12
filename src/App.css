@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Proggy';
+  src: url('/ProggyVector.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff8e7;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff8e7;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+  background-color: #d9d9d9;
+}
+
+.logo-link:active {
+  transform: scale(0.95);
+}
+
+.logo-mark {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main-title {
+  height: 180px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  object-fit: contain;
+}
+
+.catchphrase {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.2rem;
+  color: #172b4d;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 0;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.product-logo-fintory,
+.product-logo-dettory,
+.product-logo-torynvas,
+.product-logo-torync {
+  width: 120px;
+  height: auto;
+  max-height: 100px;
+}
+
+.product-name {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1rem;
+  color: #172b4d;
+  margin: 0;
+  text-align: center;
+}
+
+.product-name-fintory,
+.product-name-dettory,
+.product-name-torynvas,
+.product-name-torync {
+  display: none;
+}
+
+.product-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.product-link:hover {
+  transform: scale(1.05);
+  background-color: #d9d9d9;
+}
+
+.product-link:active {
+  transform: scale(0.95);
+}
